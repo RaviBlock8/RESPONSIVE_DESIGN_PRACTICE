@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+:root {
+  font-size: 17px;
+}
+
+.card {
+  width: 25vw;
+  box-shadow: 4px 4px 20px black;
+}
+
+.card--green {
+  background: #00bfa5;
+  color: #fff;
+}
+
+.card__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.card__img__cont {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  text-align: center;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.card__img__caption {
+  margin-top: 3%;
+}
+
+.card__img__footer {
+  margin-top: 2%;
+}
+
+.card__cont {
+  padding: 5% 5% 10% 5%;
+  font-size: 0.8rem;
+}
+.card__cont span {
+  display: block;
+}
+.card__cont__company {
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 32vw;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    font-size: 10px;
+  }
+  .card {
+    width: 60vw;
+  }
+  .card__cont__company {
+    font-size: 1.3rem;
+  }
+  .card__img__cont {
+    width: 60px;
+    height: 60px;
+  }
+}

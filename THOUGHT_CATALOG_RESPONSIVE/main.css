@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  font-size: 18px;
+}
+h2 {
+  font-size: 1.2rem;
+}
+
+header {
+  padding: 1%;
+  box-shadow: 1px 1px 7px black;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  :root {
+    font-size: 15px;
+  }
+  .content {
+    width: 100%;
+  }
+  header {
+    padding: 3%;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .content__highlight,
+  .content__list {
+    width: 95%;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .list__item__content {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
